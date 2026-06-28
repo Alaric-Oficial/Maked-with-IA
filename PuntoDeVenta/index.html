@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Punto de Venta</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Ticket template -->
+  <div id="ticket-template" style="display:none">
+    <div class="ticket">
+      <div class="ticket-header">
+        <h2>Punto de Venta</h2>
+        <p class="ticket-direccion">Av. Principal #123, Col. Centro</p>
+        <p class="ticket-tel">Tel: 555-123-4567</p>
+      </div>
+      <hr />
+      <div class="ticket-body">
+        <p><strong>Folio:</strong> <span class="ticket-folio"></span></p>
+        <p><strong>Cajero:</strong> <span class="ticket-cajero"></span></p>
+        <p><strong>Fecha:</strong> <span class="ticket-fecha"></span></p>
+        <hr />
+        <table class="ticket-items">
+          <thead><tr><th>Cant</th><th>Producto</th><th>Precio</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <hr />
+        <div class="ticket-totales">
+          <p><span>Subtotal:</span><span class="ticket-subtotal"></span></p>
+          <p><span>IVA (16%):</span><span class="ticket-iva"></span></p>
+          <p class="ticket-total-row"><span>Total:</span><span class="ticket-total"></span></p>
+          <hr />
+          <p><span>Efectivo:</span><span class="ticket-efectivo"></span></p>
+          <p><span>Cambio:</span><span class="ticket-cambio"></span></p>
+        </div>
+      </div>
+      <hr />
+      <div class="ticket-footer">
+        <p>¡Gracias por su compra!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/pos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
